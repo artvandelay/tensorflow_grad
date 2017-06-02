@@ -18,7 +18,7 @@ text_format.Merge(open(ops_file).read(), ops)
 for op in ops.op:
     # get templated string types
     if tf.string in get_op_types(op):
-        print op.name, op.summary
+        print '{} => {} \n'.format(op.name, op.summary)
     for arg in op.input_arg:
         if arg.type == tf.string:
             print op.name, op.summary
