@@ -1,3 +1,5 @@
+## List of TensorFlow Ops that have valid gradients
+
 AccumulatorApplyGradient =>	Applies a gradient to a given accumulator.
 
 AccumulatorNumAccumulated =>	Returns the number of gradients aggregated in the given accumulators.
